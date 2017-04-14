@@ -44,13 +44,13 @@ map area{outline: none}
   height:287px;
 }
 
-.panel2{
+.clock{
   position:absolute;
-  z-index:0;
-  left:683px;
-  top:70px;
-  width:192px;
-  height:347px;
+  z-index:1;
+  left:70px;
+  top:411px;
+  width:483px;
+  height:169px;
 }
 
 .panel3{
@@ -72,18 +72,18 @@ map area{outline: none}
 }
 
 @media only screen and (max-width: 1023px){
-  .panel1{
-    left:424px;
-    top:68px;
-    width:136px;
-    height:224px;
+  .product{
+    left:79px;
+    top:42px;
+    width:240px;
+    height:230px;
     background-size:100%;
   }
-  .panel2{
-    left:546px;
-    top:56px;
-    width:153px;
-    height:278px;
+  .clock{
+    left:56px;
+    top:330px;
+    width:386px;
+    height:135px;
     background-size:100%;
   }
   .panel3{
