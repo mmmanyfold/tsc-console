@@ -1,0 +1,84 @@
+html,body{
+    display:block;
+    background-color:#fff;
+    color:#000}
+
+a{color:#000}
+
+body{font-weight:300}
+
+.main,.console{
+    position:relative;
+    width:971px;
+    height:750px}
+
+@media only screen and (max-width: 1023px){
+    .main,.console{
+        width:777px;
+        height:600px}}
+
+.main{margin:0px auto}
+
+.console{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1}
+
+.panel1{
+    position:absolute;
+    z-index:0;
+        left:530px;
+        top:85px;
+        width:170px;
+        height:280px;}
+
+.panel2{
+    position:absolute;
+    z-index:0;
+        left:683px;
+        top:70px;
+        width:192px;
+        height:347px;}
+
+.panel3{
+    position:absolute;
+    z-index:0;
+        left:705px;
+        top:450px;
+        width:144px;
+        height:180px;}
+
+.panel4{
+    position:absolute;
+    z-index:0;
+        left:510px;
+        top:392px;
+        width:184px;
+        height:226px;}
+
+@media only screen and (max-width: 1023px){
+    .panel1{
+        left:424px;
+        top:68px;
+        width:136px;
+        height:224px;
+        background-size:100%}
+    .panel2{
+        left:546px;
+        top:56px;
+        width:153px;
+        height:278px;
+        background-size:100%}
+    .panel3{
+        left:563px;
+        top:360px;
+        width:115px;
+        height:144px;
+        background-size:100%}
+    .panel4{
+        left:408px;
+        top:314px;
+        width:147px;
+        height:181px;
+        background-size:100%}}
