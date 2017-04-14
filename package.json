@@ -1,0 +1,23 @@
+{
+  "name": "secret-circle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmmanyfold/tsc-console.git"
+  },
+  "author": "mmmanyfold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmmanyfold/tsc-console/issues"
+  },
+  "homepage": "https://github.com/mmmanyfold/tsc-console#readme",
+  "devDependencies": {
+    "live-reload": "^1.1.0",
+    "live-server": "^1.2.0"
+  }
+}
