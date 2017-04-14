@@ -10,12 +10,12 @@ body{font-weight:300}
 .main,.console{
     position:relative;
     width:971px;
-    height:750px}
+    height:659px}
 
 @media only screen and (max-width: 1023px){
     .main,.console{
         width:777px;
-        height:600px}}
+        height:528px}}
 
 .main{margin:0px auto}
 
