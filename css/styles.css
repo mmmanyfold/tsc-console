@@ -53,11 +53,13 @@ map area{outline: none}
   height:169px;
 }
 
-.panel3{
+.countdown{
+  font-size: 95px;
+  color: red;
   position:absolute;
-  z-index:0;
-  left:705px;
-  top:450px;
+  z-index:2;
+  left: 144px;
+  top: 430px;
   width:144px;
   height:180px;
 }
@@ -86,9 +88,10 @@ map area{outline: none}
     height:135px;
     background-size:100%;
   }
-  .panel3{
-    left:563px;
-    top:360px;
+  .countdown{
+    font-size: 80px;
+    left:108px;
+    top:342px;
     width:115px;
     height:144px;
     background-size:100%;
