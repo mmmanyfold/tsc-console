@@ -33,9 +33,3 @@ function initializeCount(id, endtime){
 }
 var doomsday = 'April 17 2019 06:06:06 GMT-0700';
 initializeCount('#countdown', doomsday);
-$(document).ready(function(){
-  $('img[usemap]').rwdImageMaps();
-  setTimeout(function(){
-    $("#loading").fadeOut();
-  }, 3000);
-});
