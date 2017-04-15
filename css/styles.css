@@ -1,3 +1,8 @@
+@font-face {
+  font-family: digital;
+  src: url("../font/digital-7-mono-italic.ttf");
+}
+
 html,body{
   display:block;
   background-color:#fff;
@@ -53,24 +58,14 @@ map area{outline: none}
   height:169px;
 }
 
-.countdown{
-  font-size: 95px;
+#countdown{
+  font-family: digital;
+  font-size: 73px;
   color: red;
   position:absolute;
   z-index:2;
-  left: 144px;
-  top: 430px;
-  width:144px;
-  height:180px;
-}
-
-.panel4{
-  position:absolute;
-  z-index:0;
-  left:510px;
-  top:392px;
-  width:184px;
-  height:226px;
+  left: 103px;
+  top: 454px;
 }
 
 @media only screen and (max-width: 1023px){
@@ -88,19 +83,10 @@ map area{outline: none}
     height:135px;
     background-size:100%;
   }
-  .countdown{
-    font-size: 80px;
-    left:108px;
-    top:342px;
-    width:115px;
-    height:144px;
-    background-size:100%;
-  }
-  .panel4{
-    left:408px;
-    top:314px;
-    width:147px;
-    height:181px;
+  #countdown{
+    font-size: 59px;
+    left: 81px;
+    top: 364px;
     background-size:100%;
   }
 }
