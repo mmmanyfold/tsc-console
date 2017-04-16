@@ -15,34 +15,29 @@
   <meta property="og:image" content="">
   <meta name="description" content="LUM.WIK.TWON.">
 
-  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-STORE">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="-1">
-  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-
   <title>Secret Circle</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/vendor/responsive-imagemaps.min.js"></script>
   <script>
-  $(document).ready(function(){
-    $('img[usemap]').rwdImageMaps();
-    setTimeout(function(){
-      $("#loading").fadeOut();
-    }, 3200);
-  });
+    $(document).ready(function(){
+      setTimeout(function(){
+        $('.loading').fadeOut();
+      }, 3200);
+    });
   </script>
 </head>
 
 <body>
-<div id="loading"></div>
+<div class="loading"></div>
 <div class="main">
   <img usemap="#console" class="console" src="img/tsc-console.gif" alt="Secret Circle Corp"/>
   <a target="_blank" href="https://shop.thehyv.net/collections/secret-circle/products/secret-circle-bundle-7-t-shirt?variant=40743272207">
     <img class="product" src="img/product1.png"/>
   </a>
   <img class="clock" src="img/clock.jpg"/>
-  <div id="countdown">
+  <img class="meter" src="img/meter.png"/>
+  <div class="countdown">
     <span class="days"></span>:<span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
   </div>
   <map name="console">

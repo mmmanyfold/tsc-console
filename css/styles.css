@@ -1,8 +1,7 @@
 @font-face {
   font-family: digital;
-  src: url("../font/digital-7-mono-italic.ttf");
+  src: url('../font/digital-7-mono-italic.ttf') format('truetype');
 }
-
 html,body{
   margin: 0;
   display:block;
@@ -11,12 +10,9 @@ html,body{
   width: 100%;
   height: 100%;
 }
-
 a{color:#000}
-
 body{font-weight:300}
-
-#loading{
+.loading{
   position: absolute;
   top:0;
   z-index: 3;
@@ -25,42 +21,36 @@ body{font-weight:300}
   background: url('../img/tsc-loading.gif') black;
   background-size: 100%;
 }
-
 @media only screen and (orientation: landscape){
-  #loading{
+  .loading{
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
-
+.meter {transform-origin: right bottom}
 .main,.console{
   position:relative;
   width:971px;
   height:659px;
 }
-
 @media only screen and (max-width: 1023px){
   .main,.console{
     width:777px;
     height:528px;
   }
 }
-
 .main{
-  margin:0px auto;
+  margin:0 auto;
   margin-top: 3em;
 }
-
 .console{
   position:absolute;
-  top:0px;
-  left:0px;
+  top:0;
+  left:0;
   z-index:0;
 }
-
 map area{outline: none}
-
 .product{
   position:absolute;
   z-index:1;
@@ -69,7 +59,6 @@ map area{outline: none}
   width:300px;
   height:287px;
 }
-
 .clock{
   position:absolute;
   z-index:1;
@@ -78,8 +67,15 @@ map area{outline: none}
   width:483px;
   height:169px;
 }
-
-#countdown{
+.meter{
+  position:absolute;
+  z-index:1;
+  left: 517px;
+  top: 58px;
+  width: auto;
+  height: 43px;
+}
+.countdown{
   font-family: digital;
   font-size: 73px;
   color: red;
@@ -88,7 +84,6 @@ map area{outline: none}
   left: 103px;
   top: 454px;
 }
-
 @media only screen and (max-width: 1023px){
   .product{
     left:79px;
@@ -104,7 +99,13 @@ map area{outline: none}
     height:135px;
     background-size:100%;
   }
-  #countdown{
+  .meter{
+    left: 415px;
+    top: 45px;
+    width: auto;
+    height: 35px;
+  }
+  .countdown{
     font-size: 59px;
     left: 81px;
     top: 364px;
