@@ -1,3 +1,14 @@
+const min = -58;
+const max = 103;
+function map_range(value, low1, high1, low2, high2) {
+  return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+$(document).mousemove(function(e){
+  const w = window.innerWidth;
+  const deg = map_range(e.pageX, 0, w, min, max);
+  $('.meter').css('transform', `rotate(${deg}deg)`);
+});
+$('img[usemap]').rwdImageMaps();
 function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor( (t/1000) % 60 );
@@ -32,4 +43,4 @@ function initializeCount(id, endtime){
   var timeinterval = setInterval(updateCount,1000);
 }
 var doomsday = 'April 17 2019 06:06:06 GMT-0700';
-initializeCount('#countdown', doomsday);
+initializeCount('.countdown', doomsday);
