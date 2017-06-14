@@ -1,5 +1,23 @@
 const min = -58;
 const max = 103;
+
+Image0=new Image(800,800)
+Image0.src="img/2-tour.jpg"
+Image1=new Image(800,800)
+Image1.src="img/2-tour-van.jpg"
+Image2=new Image(800,800)
+Image2.src="img/2-tour-win.jpg"
+Image3=new Image(800,800)
+Image3.src="img/2-tour-mtl.jpg"
+Image4=new Image(800,800)
+Image4.src="img/2-tour-tor.jpg"
+$(document).ready(function(){document.tour.src=Image0.src;return true;});
+function van(){document.tour.src=Image1.src;return true;}
+function win(){document.tour.src=Image2.src;return true;}
+function mtl(){document.tour.src=Image3.src;return true;}
+function tor(){document.tour.src=Image4.src;return true;}
+function og(){document.tour.src=Image0.src;return true;}
+
 function map_range(value, low1, high1, low2, high2) {
   return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
 }
